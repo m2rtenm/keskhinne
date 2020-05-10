@@ -15,6 +15,7 @@ namespace Keskhinne.Models
         public int AineID { get; set; }
         public string Nimetus { get; set; }
         [RegularExpression(@"^[A-Z]{3}\d{4}$", ErrorMessage = "Ainekood peab olema täpselt kolm suurtähte ja neli numbrit!")]
+        [Display(Name = "Ainekood")]
         public string Code { get; set; }
         [Display(Name = "Hindamisviis")]
         public Hindamisviis HindamisViis { get; set; }

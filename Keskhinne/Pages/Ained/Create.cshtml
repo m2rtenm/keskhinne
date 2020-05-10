@@ -1,4 +1,5 @@
 @page
+@using Keskhinne.Models
 @model Keskhinne.Pages.Ained.CreateModel
 
 @{
@@ -25,7 +26,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Aine.HindamisViis" class="control-label"></label>
-                <select asp-for="Aine.HindamisViis" class="form-control"></select>
+                <select asp-for="Aine.HindamisViis" class="form-control" asp-items="Html.GetEnumSelectList<Hindamisviis>()"></select>
                 <span asp-validation-for="Aine.HindamisViis" class="text-danger"></span>
             </div>
             <div class="form-group">

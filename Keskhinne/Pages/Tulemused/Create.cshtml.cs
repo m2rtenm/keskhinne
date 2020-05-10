@@ -21,13 +21,17 @@ namespace Keskhinne.Pages.Tulemused
 
         public IActionResult OnGet()
         {
-        ViewData["AineID"] = new SelectList(_context.Ained, "AineID", "AineID");
-        ViewData["HinneID"] = new SelectList(_context.Hinded, "HinneID", "HinneID");
+        ViewData["AineID"] = new SelectList(_context.Ained, "AineID", "Nimetus");
+        ViewData["HinneID"] = new SelectList(_context.Hinded, "HinneID", "Väärtus");
             return Page();
         }
 
         [BindProperty]
         public AineHinne AineHinne { get; set; }
+        [BindProperty]
+        public Aine Aine { get; set; }
+        [BindProperty]
+        public Hinne Hinne { get; set; }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://aka.ms/RazorPagesCRUD.

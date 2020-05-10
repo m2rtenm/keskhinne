@@ -10,14 +10,26 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+<p>
+    <label class="control-label">Kaalutud keskhinne on: @ViewData["Kaalutud"]</label>
+</p>
+<p>
+    <label class="control-label">Sooritatud ainete EAP summa on: @ViewData["KoguEAP"]</label>
+</p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.AineHinne[0].Hinne)
+                @Html.DisplayNameFor(model => model.Aine.Nimetus)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AineHinne[0].Aine)
+                @Html.DisplayNameFor(model => model.Aine.Code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aine.EAP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AineHinne[0].Hinne)
             </th>
             <th></th>
         </tr>
@@ -26,10 +38,16 @@
 @foreach (var item in Model.AineHinne) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Hinne.HinneID)
+                @Html.DisplayFor(modelItem => item.Aine.Nimetus)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Aine.AineID)
+                @Html.DisplayFor(modelItem => item.Aine.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aine.EAP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hinne.Väärtus)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.AineHinneID">Edit</a> |

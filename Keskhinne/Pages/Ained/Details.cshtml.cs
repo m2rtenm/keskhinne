@@ -28,7 +28,8 @@ namespace Keskhinne.Pages.Ained
                 return NotFound();
             }
 
-            Aine = await _context.Ained.FirstOrDefaultAsync(m => m.AineID == id);
+            //Aine = await _context.Ained.FirstOrDefaultAsync(m => m.AineID == id);
+            Aine = await _context.Ained.Include(a => a.AineteHinded).ThenInclude(ah => ah.Aine).AsNoTracking().FirstOrDefaultAsync(m => m.AineID == id);
 
             if (Aine == null)
             {
