@@ -1,0 +1,42 @@
+@page
+@model Keskhinne.Pages.Tulemused.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AineHinne[0].Hinne)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AineHinne[0].Aine)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.AineHinne) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hinne.HinneID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aine.AineID)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.AineHinneID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.AineHinneID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.AineHinneID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

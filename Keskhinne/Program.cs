@@ -16,6 +16,8 @@ namespace Keskhinne
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
+            CreateDbIfNotExists(host);
+            host.Run();
         }
 
         public static void CreateDbIfNotExists(IHost host)
@@ -25,7 +27,8 @@ namespace Keskhinne
             try
             {
                 var context = services.GetRequiredService<KeskhinneContext>();
-                context.Database.EnsureCreated();
+                //context.Database.EnsureCreated();
+                DbInitializer.Initialize(context);
             }
             catch (Exception e)
             {

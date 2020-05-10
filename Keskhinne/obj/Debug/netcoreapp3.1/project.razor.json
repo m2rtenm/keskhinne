@@ -20526,8 +20526,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Ained\\Create.cshtml",
+      "TargetPath": "Pages\\Ained\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Ained\\Index.cshtml",
+      "TargetPath": "Pages\\Ained\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Hinded\\Details.cshtml",
       "TargetPath": "Pages\\Hinded\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Tulemused\\Delete.cshtml",
+      "TargetPath": "Pages\\Tulemused\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Ained\\Delete.cshtml",
+      "TargetPath": "Pages\\Ained\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20536,8 +20556,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Tulemused\\Edit.cshtml",
+      "TargetPath": "Pages\\Tulemused\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Tulemused\\Index.cshtml",
+      "TargetPath": "Pages\\Tulemused\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20556,6 +20586,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Tulemused\\Create.cshtml",
+      "TargetPath": "Pages\\Tulemused\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -20566,6 +20601,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Tulemused\\Details.cshtml",
+      "TargetPath": "Pages\\Tulemused\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Ained\\Edit.cshtml",
+      "TargetPath": "Pages\\Ained\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Hinded\\Create.cshtml",
       "TargetPath": "Pages\\Hinded\\Create.cshtml",
       "FileKind": "mvc"
@@ -20573,6 +20618,11 @@
     {
       "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marte\\Desktop\\Keskhinne\\keskhinne\\Keskhinne\\Pages\\Ained\\Details.cshtml",
+      "TargetPath": "Pages\\Ained\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,54 @@
+@page
+@model Keskhinne.Pages.Ained.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Aine[0].Nimetus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aine[0].Code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aine[0].HindamisViis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aine[0].EAP)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Aine) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nimetus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HindamisViis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EAP)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.AineID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.AineID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.AineID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,50 @@
+@page
+@model Keskhinne.Pages.Ained.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Aine</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Aine.AineID" />
+            <div class="form-group">
+                <label asp-for="Aine.Nimetus" class="control-label"></label>
+                <input asp-for="Aine.Nimetus" class="form-control" />
+                <span asp-validation-for="Aine.Nimetus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aine.Code" class="control-label"></label>
+                <input asp-for="Aine.Code" class="form-control" />
+                <span asp-validation-for="Aine.Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aine.HindamisViis" class="control-label"></label>
+                <select asp-for="Aine.HindamisViis" class="form-control"></select>
+                <span asp-validation-for="Aine.HindamisViis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aine.EAP" class="control-label"></label>
+                <input asp-for="Aine.EAP" class="form-control" />
+                <span asp-validation-for="Aine.EAP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

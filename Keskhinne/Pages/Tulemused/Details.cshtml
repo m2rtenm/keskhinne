@@ -1,0 +1,31 @@
+@page
+@model Keskhinne.Pages.Tulemused.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>AineHinne</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AineHinne.Hinne)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AineHinne.Hinne.HinneID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AineHinne.Aine)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AineHinne.Aine.AineID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.AineHinne.AineHinneID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
