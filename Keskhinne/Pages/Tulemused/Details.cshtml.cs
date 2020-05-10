@@ -20,6 +20,8 @@ namespace Keskhinne.Pages.Tulemused
         }
 
         public AineHinne AineHinne { get; set; }
+        public Aine Aine { get; set; }
+        public Hinne Hinne { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

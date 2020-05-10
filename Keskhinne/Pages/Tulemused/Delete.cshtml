@@ -9,20 +9,32 @@
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>AineHinne</h4>
+    <h4>Tulemuse kustutamine</h4>
     <hr />
     <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AineHinne.Aine.Nimetus)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AineHinne.Aine.Nimetus)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AineHinne.Aine.Code)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AineHinne.Aine.Code)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AineHinne.Aine.EAP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AineHinne.Aine.EAP)
+        </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.AineHinne.Hinne)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.AineHinne.Hinne.HinneID)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.AineHinne.Aine)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.AineHinne.Aine.AineID)
+            @Html.DisplayFor(model => model.AineHinne.Hinne.Väärtus)
         </dd>
     </dl>
     

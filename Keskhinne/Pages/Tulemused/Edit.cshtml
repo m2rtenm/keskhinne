@@ -7,7 +7,7 @@
 
 <h1>Edit</h1>
 
-<h4>AineHinne</h4>
+<h4>Tulemuse muutmine</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -15,14 +15,14 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="AineHinne.AineHinneID" />
             <div class="form-group">
-                <label asp-for="AineHinne.HinneID" class="control-label"></label>
-                <select asp-for="AineHinne.HinneID" class="form-control" asp-items="ViewBag.HinneID"></select>
-                <span asp-validation-for="AineHinne.HinneID" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="AineHinne.AineID" class="control-label"></label>
+                <label asp-for="Aine.Nimetus" class="control-label"></label>
                 <select asp-for="AineHinne.AineID" class="form-control" asp-items="ViewBag.AineID"></select>
                 <span asp-validation-for="AineHinne.AineID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Hinne.Väärtus" class="control-label"></label>
+                <select asp-for="AineHinne.HinneID" class="form-control" asp-items="ViewBag.HinneID"></select>
+                <span asp-validation-for="AineHinne.HinneID" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

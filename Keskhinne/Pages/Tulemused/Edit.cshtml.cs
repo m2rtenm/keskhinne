@@ -22,6 +22,10 @@ namespace Keskhinne.Pages.Tulemused
 
         [BindProperty]
         public AineHinne AineHinne { get; set; }
+        [BindProperty]
+        public Aine Aine { get; set; }
+        [BindProperty]
+        public Hinne Hinne { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -38,8 +42,8 @@ namespace Keskhinne.Pages.Tulemused
             {
                 return NotFound();
             }
-           ViewData["AineID"] = new SelectList(_context.Ained, "AineID", "AineID");
-           ViewData["HinneID"] = new SelectList(_context.Hinded, "HinneID", "HinneID");
+           ViewData["AineID"] = new SelectList(_context.Ained, "AineID", "Nimetus");
+           ViewData["HinneID"] = new SelectList(_context.Hinded, "HinneID", "Väärtus");
             return Page();
         }
 

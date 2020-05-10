@@ -29,7 +29,7 @@ namespace Keskhinne.Pages.Ained
             }
 
             //Aine = await _context.Ained.FirstOrDefaultAsync(m => m.AineID == id);
-            Aine = await _context.Ained.Include(a => a.AineteHinded).ThenInclude(ah => ah.Aine).AsNoTracking().FirstOrDefaultAsync(m => m.AineID == id);
+            Aine = await _context.Ained.Include(a => a.AineteHinded).ThenInclude(ah => ah.Aine).FirstOrDefaultAsync(m => m.AineID == id);
 
             if (Aine == null)
             {
